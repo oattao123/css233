@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        .resizable-input {
+            resize: both;
+            overflow: auto;
+            width: 770px; /* Set your desired width */
+            height: 40px; /* Set your desired height */
+            border: 1px solid #ccc; /* Add gray border */
+            padding: 10px; /* Add some padding for spacing */
+            border-radius: 10px; /* Add border-radius for curved corners */
+            color: #666; /* Set text color to gray */
+            margin: 10px 0; 
+        }
+        
+        .custom-select {
+            resize: both;
+            overflow: auto;
+            border: 2px solid #ccc; /* Add gray border */
+            border-radius: 50px; /* Add border-radius for curved corners */
+            color: #666; /* Set text color to gray */
+            padding: 15px; 
+            margin: px 0; 
+        }
+
+        .gray-text {
+            color: #666;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1 style="text-align: center;">Sign up with your email address</h1>
+        <div style="text-align: center;">
+            <input id="Email" name="Email" placeholder="Email" class="resizable-input" required><br>
+        </div>
+        <div style="text-align: center;">
+            <input id="ConfirmEmail" name="ConfirmEmail" placeholder="Confirm email" class="resizable-input" required><br>
+        </div>
+        <div style="text-align: center;">
+            <input id="Password" name="Password" type="password" placeholder="Password" class="resizable-input" required><br>
+        </div>
+        <div style="text-align: center;">
+            <input id="WhatShouldWeCallYou" name="WhatShouldWeCallYou" placeholder="What should we call you?" class="resizable-input" required><br>
+        </div>
+        
+        <div style="text-align: left;">
+            <h3 class="gray-text">Date of birth</h3>
+            <select name="month" class="custom-select">
+                <option value="">January</option>
+                <option value="">February</option>
+                <option value="">March</option>
+                <option value="">April</option>
+                <option value="">May</option>
+                <option value="">June</option>
+                <option value="">July</option>
+                <option value="">August</option>
+                <option value="">September</option>
+                <option value="">October</option>
+                <option value="">November</option>
+                <option value="">December</option>
+            </select>
+            <input type="number" placeholder="Day" class="custom-select">
+            <input type="number" placeholder="Year" class="custom-select">
+        </div>
+        
+        <input type="radio" id="male" name="gender" value="Male" class="gray-text">
+        <label for="male" class="gray-text">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" class="gray-text">
+        <label for="female" class="gray-text">Female</label>
+        <input type="radio" id="nonBinary" name="gender" value="Non-binary" class="gray-text">
+        <label for="nonBinary" class="gray-text">Non-binary</label>
+        <br>
+        
+        <input type="checkbox" id="shareData" name="shareData">
+        <label for="shareData" class="gray-text">Share my registration data with Spotify's content providers for marketing purposes</label>
+        <br>
+        
+        <div style="text-align: center;">
+            <p>By clicking in Sign up, You agree to Spotify's <a style="color: #57b660;">Terms and Conditions of Use</a>.</p>
+            <p>To learn more about how Spotify collects, uses, shares, and protects your<br> personal data, please read Spotify's <a style="color: #57b660;">Privacy Policy</a>.</p>
+        </div>
+
+        <div style="text-align: center;">
+            <button type="submit" style="background-color: #57b660; padding: 25px; color: white; font-weight: bold; border-radius: 30px; border: none; width: 650px; font-size: 18px;">Sign up</button>
+        </div>
+    </form>
+</body>
+</html>
