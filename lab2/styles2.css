@@ -1,0 +1,17 @@
+span.alert {
+    border-style: solid;
+  }
+  span.alert.stop{
+    border-style: solid;
+    background-color: red;
+  }
+  #special{
+    background-color: yellow;
+  }
+  span.alert.go{
+    border-style: solid;
+    background-color: green;
+  }
+
+
+
